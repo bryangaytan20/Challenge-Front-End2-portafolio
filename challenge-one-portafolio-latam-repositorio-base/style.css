@@ -45,13 +45,14 @@ section.menu{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    height: 100%;
 
 }
 
 .menu__header{
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
 
 }
 
@@ -70,7 +71,11 @@ section.menu{
 
 .menu__list__item:nth-child(6){
 
-    font-weight: bold;
+    font-weight: lighter;
+}
+
+.menu__list__item:nth-child(-n+5){
+    display: none;
 }
 
 /*Sección Title*/
@@ -122,8 +127,12 @@ Utiliza las referencias de los breakpoints @media abajo */
 /*Tablet*/
 @media (min-width: 768px) {
 
-/* Menú */
+    /* Menú */
 
+    .menu__list__item:nth-child(-n+5){
+        display: flex;
+    }
+    
 /*title*/
 
 /*Skills*/
@@ -139,7 +148,12 @@ Utiliza las referencias de los breakpoints @media abajo */
 /*Mobile*/
 @media (min-width: 425px) {
 
-/*Menu*/
+    /*Menu*/
+
+    .menu__list__item:nth-child(6){
+
+        font-weight: bold;
+    }
 
 /*Titulo*/
 
