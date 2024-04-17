@@ -53,7 +53,6 @@ section.menu{
     display: flex;
     align-items: center;
     gap: 8px;
-
 }
 
 .menu__header img{
@@ -63,14 +62,10 @@ section.menu{
 
 .menu__list{
     display: flex;
-    justify-content: flex-start;
-    flex-wrap: nowrap;
     gap: 32px;
-
 }
 
 .menu__list__item:nth-child(6){
-
     font-weight: lighter;
 }
 
@@ -81,7 +76,33 @@ section.menu{
 /*Sección Title*/
 
 section.title{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 
+.title__container{
+    margin-left: 152px;
+    margin-top: 32px;
+    padding: 21px 0;
+}
+
+.title__container h2{
+    font-size: 52px;
+}
+
+.title__profile{
+    float: right;
+    margin-top: 32px;
+    margin-right: 152px;
+
+}
+
+.title__network{
+    display: flex;
+    justify-content:flex-start;
+    padding: 0;
+    gap: 52px;
 }
 
 /*Sección About*/
