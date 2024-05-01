@@ -133,6 +133,11 @@ section.about{
     /* padding-right: 33rem; */
 }
 
+.about__container img{
+    width: 10rem;
+    height: 5rem;
+}
+
 /*Sección Hobbies*/
 
 section.hobbies{
