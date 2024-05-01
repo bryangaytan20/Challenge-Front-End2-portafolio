@@ -138,10 +138,79 @@ section.about{
     height: 5rem;
 }
 
+/*Sección Skills*/
+section.skills{
+    margin-bottom: 5.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.skills h3{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.skills__line{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.skills__box{
+    display: flex;
+    width: 11rem;
+    height: 10.875rem;
+    align-items: end;
+    
+}
+
+.skills__box ul{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: start;
+}
+
+
+
 /*Sección Hobbies*/
 
 section.hobbies{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     
+}
+
+.hobbies h3{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.hobbies__line{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+
+}
+
+.hobbies__box{
+    display: flex;
+    width: 11rem;
+    height: 10.875rem;
+    align-items: end;
+    
+}
+
+.hobbies__box ul{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: start;
 }
 
 /* Experiencia Académica*/
