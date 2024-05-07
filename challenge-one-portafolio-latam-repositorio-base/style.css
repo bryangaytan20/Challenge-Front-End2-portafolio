@@ -179,6 +179,7 @@ section.skills{
 /*Sección Hobbies*/
 
 section.hobbies{
+    margin-bottom: 5.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -216,9 +217,55 @@ section.hobbies{
 /* Experiencia Académica*/
 
 section.academic{
+    margin-bottom: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 }
 
+section.academic h2{
+    font-size: 2rem;
+    font-weight: bold;
+
+}
+
+.academic__courses{
+    display: flex;
+    justify-content: center;
+    gap: 8rem;
+    flex-wrap: wrap;
+
+}
+
+.academic__courses__box{
+    width: 23rem;
+    height: 17.875rem;
+}
+
+.academic__courses__item__img{
+    padding: 4rem;
+    align-items: center;
+    background: #FFFFFF;
+}
+
+.academic__courses__item__img img{
+    width: 12rem;
+    height: 8.125rem;
+}
+
+
+
+.academic__courses__item__title{
+    font-size: 1.375rem;
+    margin-top: 0.2rem;
+}
+
+.academic__courses__item__subtitle{
+    font-size: 1rem;
+
+
+}
 /* experiencia*/
 
 section.experience{
@@ -281,16 +328,18 @@ Utiliza las referencias de los breakpoints @media abajo */
     }
     
     /*title*/
-
-
-
-
-
 /*Skills*/
 
 /*Hobbies*/
 
-/*Formación Académica*/
+
+    /*Formación Académica*/
+
+
+
+    .academic__courses{
+        gap: 1rem;    
+    }
 
 /*Experiencia Profesional*/
 
@@ -314,7 +363,7 @@ Utiliza las referencias de los breakpoints @media abajo */
 
 /*Hobbies*/
  
-/*Formación Académica*/
+    /*Formación Académica*/
 
 /*Experiencia Profesional*/
 
