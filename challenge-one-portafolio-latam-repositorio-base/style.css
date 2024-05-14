@@ -279,15 +279,20 @@ section.experience{
 
 .experiencie__box{
     display: flex;
-    justify-content: center; 
-    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+    align-items: start;
     gap: 1rem;
     margin-bottom: 3rem;
 }
 
-.experiencie__box:nth-child(3),
-.experiencie__box:nth-child(5){
-    flex-direction: row-reverse;
+.experiencie__box:nth-child(3){
+    flex-direction: start;
+}
+
+.experience__img{
+    width: 75vw;
+
 }
 
 .experience__title{
@@ -329,17 +334,17 @@ section.experience{
 
 section.formcontato{
 
+    display: flex;
+    
 }
+
+
 
 /*footeer*/
 
 section.footer{
    
 }
-
-/* Vamos a desafiarnos trabajando con responsividad?
-Utiliza las referencias de los breakpoints @media abajo */
-
 
 /*Tablet*/
 
@@ -394,7 +399,21 @@ Utiliza las referencias de los breakpoints @media abajo */
         gap: 1rem;    
     }
 
-/*Experiencia Profesional*/
+    /*Experiencia Profesional*/
+
+    .experiencie__box{
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .experiencie__box:nth-child(3){
+        flex-direction: row-reverse;
+    }
+
+    .experience__img{
+        width: 55vw;
+    }
+
 
 }
 
@@ -419,6 +438,9 @@ Utiliza las referencias de los breakpoints @media abajo */
     /*Formación Académica*/
 
 /*Experiencia Profesional*/
+
+    
+
 
  /*Contacto*/
 
