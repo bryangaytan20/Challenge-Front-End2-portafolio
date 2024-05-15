@@ -76,48 +76,41 @@ section.menu{
 /*Sección Title*/
 
 section.tittle{
-    height: 100%;
+    display: flex;
+    align-items: center;
 }
-
-
 .title__div{
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-around;
-    /* Esto es lo que me causa el problema de mover los elementos hacia la izquierda */
-    padding-left: 9.5rem;
-    padding-right: 9.5rem;
-    align-items: center;
-    max-width: 100%;
+    flex-direction: column;
+    align-items: start;
+    width: 80vw;
+    margin-left: 8%;
 }
 
 .title__container{
-    height: 50%;
-    margin-top: 2rem;
-    padding: 1.3rem 0;
+    width: 80vw;
 }
 
 .title__container h2{
-    font-size: 3.25rem;
+    font-size: 1.375rem;
 }
 
 .title__container h3{
-    font-size: 1.3rem;
+    font-size: 0.875rem;
     font-weight: lighter;
 }
 
 .title__network{
-    font-size: 1rem;
+    font-size: 0.875rem;
     display: flex;
     padding: 0;
-    gap: 3.25rem;
+    gap: .8rem;
 }
 
 .title__profile{
-    width: 23rem;
-    height: 23rem;
+    width: 25vw;
+    height: 25vw;
     margin-top: 2rem;
-    max-width: 100%;
 
 }
 
@@ -464,35 +457,6 @@ section.footer{
 
 /*Tablet*/
 
-@media (max-width: 768px) {
-
-    /*title*/
-    .title__div{
-        margin: 0, 2rem
-    }
-
-    .title__container{
-        margin-left: 2rem;   
-    }
-
-    .title__container h2{
-        font-size: 1.3rem;
-    }
-    
-    .title__container h3{
-        font-size: 1rem;
-    }
-
-    .title__profile{
-        width: 9.125rem;
-        height: 9.125rem;
-        margin-right: 9.5rem;
-        margin-left: 2rem;
-    }
-
-}
-
-
 @media (min-width: 768px) {
 
     /* Menú */
@@ -501,6 +465,30 @@ section.footer{
     }
     
     /*title*/
+    .title__div{
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+    
+    .title__container{
+        width: 70vw;
+        margin-top: 2rem;
+        padding: 1.3rem 0;
+    }
+    
+    .title__container h2{
+        font-size: 3.25rem;
+    }
+    
+    .title__container h3{
+        font-size: 1.3rem;
+        font-weight: lighter;
+    }
+    
+    .title__network{
+        font-size: 1rem;
+        gap: 3.25rem;
+    }
 
     /* About */
     section.about{
@@ -513,7 +501,7 @@ section.footer{
         width: 50vw; 
     }
 
-    
+
     /*Skills*/
     /*Hobbies*/
 
@@ -569,20 +557,5 @@ section.footer{
 
         font-weight: bold;
     }
-
-    /*Titulo*/
-
-    /*Sección sobre mi*/
-
-    /*Skills*/
-
-    /*Hobbies*/
- 
-    /*Formación Académica*/
-
-    /*Experiencia Profesional*/
-
-
-/   *Footer*/
 
 }
