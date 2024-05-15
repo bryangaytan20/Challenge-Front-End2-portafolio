@@ -7,8 +7,8 @@ coloque nas sessões indicadas*/
 :root{
     /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
     /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
-   --cor-de-fundo: #F5F5F5;
-   --cor-de-link: #000;
+   --cor-de-fundo: #F9F7F7;
+   --cor-de-link: #112D4E;
 }
 
 body {
@@ -124,13 +124,21 @@ section.tittle{
 /*Sección About*/
 
 section.about{
-    background: #F5F5F5;
+    display: flex;
+    background: #DBE2EF;
+    padding: 2rem 0;
+    margin-top: 2rem;
+    justify-content: center;
 
 }
 
 .about__container{
-    padding-left: 9.5rem; 
-    /* padding-right: 33rem; */
+    padding: 0 3rem;
+    width: 80vw; 
+}
+
+.about__paragraph{
+    line-height: 1.5;
 }
 
 .about__container img{
@@ -161,9 +169,10 @@ section.skills{
 
 .skills__box{
     display: flex;
-    width: 11rem;
-    height: 10.875rem;
+    width: 12rem;
+    height: 10rem;
     align-items: end;
+    background: #FFFFFF;
     
 }
 
@@ -201,9 +210,10 @@ section.hobbies{
 
 .hobbies__box{
     display: flex;
-    width: 11rem;
-    height: 10.875rem;
+    width: 12rem;
+    height: 10rem;
     align-items: end;
+    background: #FFFFFF;
     
 }
 
@@ -217,10 +227,11 @@ section.hobbies{
 /* Experiencia Académica*/
 
 section.academic{
-    margin-bottom: 5.5rem;
+    padding: 4rem 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: #DBE2EF;
 
 }
 
@@ -233,6 +244,7 @@ section.academic{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin-right: 2rem;
 
 }
 
@@ -255,16 +267,18 @@ section.academic{
 
 .academic__courses__item__title{
     font-size: 1.375rem;
+    padding: 0;
 }
 
 .academic__courses__item__subtitle{
     font-size: 1rem;
+    padding: 0;
 }
 
 /* experiencia*/
 
 section.experience{
-    margin-bottom: 5.5rem;
+    padding: 3rem 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -295,6 +309,10 @@ section.experience{
 
 }
 
+.experience__info{
+    width: 80vw;
+}
+
 .experience__title{
     font-size: 1.375rem;
     font-weight: bold;
@@ -308,31 +326,33 @@ section.experience{
 }
 
 .experiencia__botao--repo{
-    background-color: #F5F5F5;
+    background-color: #F9F7F7;
     width: 7.25rem;
     height: 3.188rem;
     cursor: pointer;
     font-size: 1rem;
     margin-right: 1rem;
     margin-top: 0.5rem;
-    color: #2A7AE4;
-    border: 2px solid #2A7AE4;
+    color: #3F72AF;
+    border: 2px solid #3F72AF;
 }
 
 .experience__botao--demo{
-    background-color: #2A7AE4;
+    background-color: #3F72AF;
     width: 7.25rem;
     height: 3.188rem;
     cursor: pointer;
     font-size: 1rem;
     margin-top: 0.5rem;
-    color: #F5F5F5;
-    border: #2A7AE4;
+    color: #F9F7F7;
+    border: #3F72AF;
 }
 
 /*Contacto*/
 
 section.formcontato{
+    width: 100%;
+    background: #DBE2EF;
     display: flex;
     justify-content: center;
 }
@@ -344,13 +364,26 @@ section.formcontato{
     padding: 5rem 0;
 }
 
+.formcontato__img{
+    display: none;
+    width: 33vw;
+}
+
+.formcontato__text{
+    width: 80vw;
+    margin-right: 5rem;
+
+}
+
 .formcontato__title{
+    font-family: inherit;
     margin-top: 0;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
 .formcontato__subtext{
+    font-family: inherit;
     font-size: 1rem;
     font-weight: lighter;
 }
@@ -363,58 +396,51 @@ section.formcontato{
 }
 
 .formcontato__input{
-    border: none;
+    font-family: inherit;
+    border: 0;
     border-radius: 2px;
     height: 3rem;
     padding: 0.5rem;
-}
+    box-shadow: 0px -1px 0px #A2A2A2 inset;
+    outline-color: transparent;
+    font-size: 1rem;
 
-/* input {
-  position: relative;
-}
+    &:focus{
+        box-shadow: 0px -1px 0px #7260f9 inset;
+    }
 
-input::placeholder {
-  position: absolute;
-  top: 0;
-  left: 0;
-  font-size: 12px;
-  color: #999;
-  transition: all 0.2s ease-in-out;
 }
-
-input:not(:placeholder-shown)::placeholder {
-  top: -10px;
-  font-size: 10px;
-}
- */
-
 
 ::placeholder{
+    font-family: inherit;
     font-size: 1rem;
     color: #A2A2A2;
     
 }
 
 .formcontato__textarea{
-    border: none;
+    border: 0;
+    padding: 0.5rem;
     border-radius: 2px;
     resize: none;
+    box-shadow: 0px -1px 0px #A2A2A2 inset;
+    outline-color: transparent;
 }
 
+
 .formcontato__botao{
-    background-color: #2A7AE4;
+    background-color: #3F72AF;
     width: 9rem;
     height: 3.188rem;
     cursor: pointer;
     font-size: 1rem;
     margin-top: 0.5rem;
-    color: #F5F5F5;
-    border: #2A7AE4;
+    color: #F9F7F7;
+    border: #3F72AF;
 
 }
 
 /*footeer*/
-
 section.footer{
     margin-top: 2rem;
     display: flex;
@@ -470,27 +496,34 @@ section.footer{
 @media (min-width: 768px) {
 
     /* Menú */
-
     .menu__list__item:nth-child(-n+5){
         display: flex;
     }
     
     /*title*/
-/*Skills*/
 
-/*Hobbies*/
+    /* About */
+    section.about{
+        justify-content: start;
+    
+    }
 
+    .about__container{
+        padding: 0 0 0 8rem;
+        width: 50vw; 
+    }
+
+    
+    /*Skills*/
+    /*Hobbies*/
 
     /*Formación Académica*/
-
-
 
     .academic__courses{
         gap: 1rem;    
     }
 
     /*Experiencia Profesional*/
-
     .experiencie__box{
         flex-direction: row;
         align-items: center;
@@ -500,10 +533,30 @@ section.footer{
         flex-direction: row-reverse;
     }
 
+    .experience__info{
+        width: 20vw;
+    }
+    
+
     .experience__img{
         width: 55vw;
     }
 
+    /*Contacto*/
+
+    .formcontato__img{
+        display: block;
+    }
+
+    .formcontato__title{
+        font-size: 2rem;
+    }
+
+    .formcontato__text{
+        width: 45vw;
+        margin: 0;
+    
+    }
 
 }
 
@@ -517,23 +570,19 @@ section.footer{
         font-weight: bold;
     }
 
-/*Titulo*/
+    /*Titulo*/
 
-/*Sección sobre mi*/
+    /*Sección sobre mi*/
 
-/*Skills*/
+    /*Skills*/
 
-/*Hobbies*/
+    /*Hobbies*/
  
     /*Formación Académica*/
 
-/*Experiencia Profesional*/
-
-    
+    /*Experiencia Profesional*/
 
 
- /*Contacto*/
-
-/*Footer*/
+/   *Footer*/
 
 }
