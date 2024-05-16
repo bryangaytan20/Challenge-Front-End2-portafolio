@@ -412,6 +412,8 @@ section.formcontato{
 }
 
 .formcontato__textarea{
+    font-family: inherit;
+    font-size: 1rem;
     border: 0;
     padding: 0.5rem;
     border-radius: 2px;
@@ -431,6 +433,15 @@ section.formcontato{
     color: #F9F7F7;
     border: #3F72AF;
 
+}
+
+
+.warnings{
+    width: 300px;
+    text-align: center;
+    margin: auto;
+    color: #A40202;
+    line-height: 2;
 }
 
 /*footeer*/
