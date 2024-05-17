@@ -35,7 +35,7 @@
     <!-- Sección del Header/Title/Hero -->
     <section class="title">
         <div class="title__div">
-            <img class="title__profile" src="assets\profile.png" alt="Imagen de perfil de Bryan Gaytán">
+            <img class="title__profile" src="assets/profile-BG.png" alt="Imagen de perfil de Bryan Gaytán">
             <div class="title__container">
                 <h2 class="title__bio">Hola, mi nombre es Bryan Gaytán, desarrollador Front-end</h2>
                 <h3 class="title__subsection">Pasante de ingeniería en sistemas computacionales con 25 años de edad, nacido en Zacatecas, México. Egresado del Instituto Politécnico Nacional (UPIIZ).</h3>
@@ -238,7 +238,7 @@
                         <input class="formcontato__input" type="email" id="email" name="email" placeholder="E-mail">
                         <input class="formcontato__input" type="text" id="asunto" name="asunto" placeholder="Asunto">
                         <textarea class="formcontato__textarea" rows="5" cols="40" id="mensaje" name="mensaje" placeholder="Mensaje"></textarea>
-                        <button type="submit" class="formcontato__botao" id="btn_enviar" disabled>Enviar mensaje</button>
+                        <button type="submit" class="formcontato__botao" id="btn_enviar" disabled onclick=" return validar();">Enviar mensaje</button>
                         <p class="warnings" id="warnings"></p>
                     </form>
                 </div>
